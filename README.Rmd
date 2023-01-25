@@ -40,6 +40,7 @@ knitr::opts_chunk$set(
 - [tidytable](https://github.com/markfairbanks/tidytable)
   - Provides implementation of `dplyr` syntax natively in `data.table`
 - [arrow](https://arrow.apache.org/docs/r/) is a really nice way to handle large datasets.  Is a good option too if you can't setup a dedicated database
+- [dbplyr](https://dbplyr.tidyverse.org/) is for when you *do* have to pull data out of databases, but don't want to write dplyr code rather than SQL.
   
 # Plotting
 

@@ -1,135 +1,144 @@
 Useful R packages
 ================
 John Fee
-2023-01-24
+2023-01-25
 
 # Documenting data
 
-- [codebookr](https://github.com/jfjelstul/codebookr)
-- [codebook](https://rubenarslan.github.io/codebook/)
+-   [codebookr](https://github.com/jfjelstul/codebookr)
+-   [codebook](https://rubenarslan.github.io/codebook/)
 
 # Creating Documents
 
-- [Creating document
-  templates](https://bookdown.org/yihui/rmarkdown/document-templates.html)
-  - This will be useful to create a default analysis document so we
-    don’t have to write boilerplate code to setup data access every time
-- [bslib](https://rstudio.github.io/bslib/)
-  - Nice options for theming html documents produced by Rmd
-  - Should work with `flexdashboard`!
-- [reactable](https://glin.github.io/reactable/) and
-  [reactablefmtr](https://kcuilla.github.io/reactablefmtr/)
-  - The best options (I’ve found) for creating nice customizable tables
-    for html documents.
-- [kableExtra](https://haozhu233.github.io/kableExtra/)
-  - Nice lightweight package for html/pdf documents
-- [gt](https://gt.rstudio.com/)
-  - Table making package which I’ve heard good things about - might be
-    worth trying out
+-   [Creating document
+    templates](https://bookdown.org/yihui/rmarkdown/document-templates.html)
+    -   This will be useful to create a default analysis document so we
+        don’t have to write boilerplate code to setup data access every
+        time
+-   [bslib](https://rstudio.github.io/bslib/)
+    -   Nice options for theming html documents produced by Rmd
+    -   Should work with `flexdashboard`!
+-   [reactable](https://glin.github.io/reactable/) and
+    [reactablefmtr](https://kcuilla.github.io/reactablefmtr/)
+    -   The best options (I’ve found) for creating nice customizable
+        tables for html documents.
+-   [kableExtra](https://haozhu233.github.io/kableExtra/)
+    -   Nice lightweight package for html/pdf documents
+-   [gt](https://gt.rstudio.com/)
+    -   Table making package which I’ve heard good things about - might
+        be worth trying out
 
 # Data processing
 
-- `tidyverse` is generally useful, particularly `dplyr`, `tidyr`,
-  `janitor`, `stringr`, and `readr`.
-- [dtplyr](https://dtplyr.tidyverse.org/)
-  - Provides `data.table` backend for `dplyr`
-- [tidytable](https://github.com/markfairbanks/tidytable)
-  - Provides implementation of `dplyr` syntax natively in `data.table`
-- [arrow](https://arrow.apache.org/docs/r/) is a really nice way to
-  handle large datasets. Is a good option too if you can’t setup a
-  dedicated database
+-   `tidyverse` is generally useful, particularly `dplyr`, `tidyr`,
+    `janitor`, `stringr`, and `readr`.
+-   [dtplyr](https://dtplyr.tidyverse.org/)
+    -   Provides `data.table` backend for `dplyr`
+-   [tidytable](https://github.com/markfairbanks/tidytable)
+    -   Provides implementation of `dplyr` syntax natively in
+        `data.table`
+-   [arrow](https://arrow.apache.org/docs/r/) is a really nice way to
+    handle large datasets. Is a good option too if you can’t setup a
+    dedicated database
+-   [dbplyr](https://dbplyr.tidyverse.org/) is for when you *do* have to
+    pull data out of databases, but don’t want to write dplyr code
+    rather than SQL.
 
 # Plotting
 
-- [ggplot2](https://ggplot2.tidyverse.org/)
-- [ggforce](https://ggforce.data-imaginist.com/)
-  - A package with (lots of) extensions of to ggplot. A good place to
-    look first when something is a little awkward to do in base ggplot.
-- [scales](https://scales.r-lib.org/)
-  - I use this a lot to create nicely formatted ggplot axes, but also
-    the functions are useful for generic formatting (e.g. I use
-    `label_comma` often to format data for tables)
-- [cowplot](https://github.com/wilkelab/cowplot)
-  - Nice theme, some functions for arranging and sizing plots
-- [ggpubr](https://rpkgs.datanovia.com/ggpubr/)
-  - Some nice shortcuts to make common plots good looking. E.g. density
-    plots with median reference lines and rugs, lollipop chart, etc.
-  - Also has a nice theme to use
-- [ggside](https://github.com/jtlandis/ggside)
-  - Nice option to add side plots
-- [ggmosaic](https://haleyjeppson.github.io/ggmosaic/index.html)
-  - Package to produce mosaic plots, which I think are intuitive but
-    sadly seem to be confusing initially to others
-- [binsreg](https://nppackages.github.io/binsreg/)
-  - A package for plotting binscatters, which is an interesting
-    (nonparameteric) approach for visualizing relationships. Not sure of
-    the advantages vs splines though.
-- [ggdist](https://mjskay.github.io/ggdist/) A go-to library for
-  communicating distributions,and uncertainty about distributions!
+-   [ggplot2](https://ggplot2.tidyverse.org/)
+-   [ggforce](https://ggforce.data-imaginist.com/)
+    -   A package with (lots of) extensions of to ggplot. A good place
+        to look first when something is a little awkward to do in base
+        ggplot.
+-   [scales](https://scales.r-lib.org/)
+    -   I use this a lot to create nicely formatted ggplot axes, but
+        also the functions are useful for generic formatting (e.g. I use
+        `label_comma` often to format data for tables)
+-   [cowplot](https://github.com/wilkelab/cowplot)
+    -   Nice theme, some functions for arranging and sizing plots
+-   [ggpubr](https://rpkgs.datanovia.com/ggpubr/)
+    -   Some nice shortcuts to make common plots good looking. E.g.
+        density plots with median reference lines and rugs, lollipop
+        chart, etc.
+    -   Also has a nice theme to use
+-   [ggside](https://github.com/jtlandis/ggside)
+    -   Nice option to add side plots
+-   [ggmosaic](https://haleyjeppson.github.io/ggmosaic/index.html)
+    -   Package to produce mosaic plots, which I think are intuitive but
+        sadly seem to be confusing initially to others
+-   [binsreg](https://nppackages.github.io/binsreg/)
+    -   A package for plotting binscatters, which is an interesting
+        (nonparameteric) approach for visualizing relationships. Not
+        sure of the advantages vs splines though.
+-   [ggdist](https://mjskay.github.io/ggdist/) A go-to library for
+    communicating distributions,and uncertainty about distributions!
 
 ## Options to arrange plots within a multiplot
 
-- [patchwork](https://patchwork.data-imaginist.com/)
-- [gridExtra](https://cran.r-project.org/web/packages/gridExtra/index.html)
-- `cowplot` has options
-- [egg](https://github.com/baptiste/egg)f
+-   [patchwork](https://patchwork.data-imaginist.com/)
+-   [gridExtra](https://cran.r-project.org/web/packages/gridExtra/index.html)
+-   `cowplot` has options
+-   [egg](https://github.com/baptiste/egg)f
 
 ## Color palettes
 
 This isn’t something I have been principled about - would be nice to
 leverage these and start!
 
-- [microshades](https://karstenslab.github.io/microshades/)
-  - Nice package for color-blind accessible palettes. No ggplot themes
-    built in (so this will require use the `scale_*_manual` functions),
-    or some additional boilerplate to play nicely with ggplot.
-- [palettes](https://tidytales.ca/posts/2022-12-20_palettes/)
-  - A package for making a standardized color palette that plays nicely
-    with various plotting libraries. I should lean on this for custom
-    palettes!
+-   [microshades](https://karstenslab.github.io/microshades/)
+    -   Nice package for color-blind accessible palettes. No ggplot
+        themes built in (so this will require use the `scale_*_manual`
+        functions), or some additional boilerplate to play nicely with
+        ggplot.
+-   [palettes](https://tidytales.ca/posts/2022-12-20_palettes/)
+    -   A package for making a standardized color palette that plays
+        nicely with various plotting libraries. I should lean on this
+        for custom palettes!
 
 # Coding/Productivity
 
-- [modules](https://wahani.github.io/modules/)
-  - Provides an intermediate unit of code organization that is between a
-    function and a package. Very useful if you want to organize code but
-    don’t have access to package development (`Rtools`)
-- [zeallot](https://cran.r-project.org/web/packages/zeallot/index.html)
-  - Provides packing and unpacking functionality similar to python’s
-    `zip` and `unzip`
-- [magittr](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html)
-  - The source of the pipe operator which is incorporated into the
-    tidyverse. Also has some operators like `%$%` (pipes in and exposes
-    names - like using `with`) and some aliases for operations to make
-    them easier to use with pipe-syntax
-- [vtable](https://nickch-k.github.io/vtable/index.html)
-  - Quick way to summarize data and expose data labels (Is there a way
-    to integrate with other data documenting packages?)
-- [unpivotr](https://cran.r-project.org/web/packages/unpivotr/index.html)
-  - A very nice option for reading in Excel worksheets that are not
-    designed to be machine readable
-- [datapasta](https://github.com/MilesMcBain/datapasta)
-  - A nice I/O library that helps get data into and out of R quickly!
-    Best for quick requests where a reproducible process isn’t
-    necessary - just up-front dev speed.
-- [`purrr`](https://purrr.tidyverse.org/) is a great tool for handling
-  situations that would require loops.
-- [furrr](https://furrr.futureverse.org/) is a good way to speed up
-  `purrr` when needed
+-   [modules](https://wahani.github.io/modules/)
+    -   Provides an intermediate unit of code organization that is
+        between a function and a package. Very useful if you want to
+        organize code but don’t have access to package development
+        (`Rtools`)
+-   [zeallot](https://cran.r-project.org/web/packages/zeallot/index.html)
+    -   Provides packing and unpacking functionality similar to python’s
+        `zip` and `unzip`
+-   [magittr](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html)
+    -   The source of the pipe operator which is incorporated into the
+        tidyverse. Also has some operators like `%$%` (pipes in and
+        exposes names - like using `with`) and some aliases for
+        operations to make them easier to use with pipe-syntax
+-   [vtable](https://nickch-k.github.io/vtable/index.html)
+    -   Quick way to summarize data and expose data labels (Is there a
+        way to integrate with other data documenting packages?)
+-   [unpivotr](https://cran.r-project.org/web/packages/unpivotr/index.html)
+    -   A very nice option for reading in Excel worksheets that are not
+        designed to be machine readable
+-   [datapasta](https://github.com/MilesMcBain/datapasta)
+    -   A nice I/O library that helps get data into and out of R
+        quickly! Best for quick requests where a reproducible process
+        isn’t necessary - just up-front dev speed.
+-   [`purrr`](https://purrr.tidyverse.org/) is a great tool for handling
+    situations that would require loops.
+-   [furrr](https://furrr.futureverse.org/) is a good way to speed up
+    `purrr` when needed
 
 # Modeling
 
 This section could conceivable take over the whole document, so I’m just
 going to list a few things that are relevant to me right now.
 
-- The [easystats](https://easystats.github.io/easystats/) ecosystem
-  - Not a single package, but a collection of packages (like the
-    tidyverse) that work together to help with statistical modeling. I
-    would ideally like to lean on this more in the future.
-- [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/index.html)
-  - A successor of sorts to the `emmeans` package.
-- [ggeffects](https://github.com/strengejacke/ggeffects)
-  - Lightweight `ggplot` extension for calculating and plotting marginal
-    effects
-- [modelsummary](https://vincentarelbundock.github.io/modelsummary/) is
-  a cool package for reporting model results
+-   The [easystats](https://easystats.github.io/easystats/) ecosystem
+    -   Not a single package, but a collection of packages (like the
+        tidyverse) that work together to help with statistical modeling.
+        I would ideally like to lean on this more in the future.
+-   [marginaleffects](https://vincentarelbundock.github.io/marginaleffects/index.html)
+    -   A successor of sorts to the `emmeans` package.
+-   [ggeffects](https://github.com/strengejacke/ggeffects)
+    -   Lightweight `ggplot` extension for calculating and plotting
+        marginal effects
+-   [modelsummary](https://vincentarelbundock.github.io/modelsummary/)
+    is a cool package for reporting model results
