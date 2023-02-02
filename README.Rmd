@@ -109,3 +109,11 @@ This section could conceivable take over the whole document, so I'm just going t
   - Lightweight `ggplot` extension for calculating and plotting marginal effects
 - [modelsummary](https://vincentarelbundock.github.io/modelsummary/) is a cool package for reporting model results
 
+## Survival analysis specific libraries
+
+- `survival`
+- `flexsurv`
+- `ggsurvfit` provides ggplot visualizations for survival curves
+- [condsurv](https://www.emilyzabor.com/condsurv/index.html) is a quick way to calculate and plot conditional survival
+- [contsurvplot](https://robindenz1.github.io/contsurvplot/) is a useful package for visualizing the effect of continuous covariates on survival
+
