@@ -1,7 +1,7 @@
 Useful R packages
 ================
 John Fee
-2023-02-02
+2023-02-25
 
 # Documenting data
 
@@ -69,6 +69,8 @@ John Fee
     the advantages vs splines though.
 - [ggdist](https://mjskay.github.io/ggdist/) A go-to library for
   communicating distributions,and uncertainty about distributions!
+- [gghighlight](https://yutannihilation.github.io/gghighlight/)
+  Convenient way to highlight only a few obs (saves some typing)
 
 ## Options to arrange plots within a multiplot
 

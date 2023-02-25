@@ -61,6 +61,7 @@ knitr::opts_chunk$set(
 - [binsreg](https://nppackages.github.io/binsreg/)
   - A package for plotting binscatters, which is an interesting (nonparameteric) approach for visualizing relationships.  Not sure of the advantages vs splines though.
 - [ggdist](https://mjskay.github.io/ggdist/) A go-to library for communicating distributions,and uncertainty about distributions!
+- [gghighlight](https://yutannihilation.github.io/gghighlight/) Convenient way to highlight only a few obs (saves some typing)
   
 ## Options to arrange plots within a multiplot
 
