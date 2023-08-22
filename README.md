@@ -1,7 +1,7 @@
 Useful R packages
 ================
 John Fee
-2023-02-25
+2023-08-22
 
 # Documenting data
 
@@ -71,6 +71,8 @@ John Fee
   communicating distributions,and uncertainty about distributions!
 - [gghighlight](https://yutannihilation.github.io/gghighlight/)
   Convenient way to highlight only a few obs (saves some typing)
+- [geomtextpath](https://github.com/AllanCameron/geomtextpath) Nice way
+  to create labeled lines
 
 ## Options to arrange plots within a multiplot
 
