@@ -1,7 +1,7 @@
 Useful R packages
 ================
 John Fee
-2023-08-22
+2023-08-24
 
 # Documenting data
 
@@ -73,6 +73,8 @@ John Fee
   Convenient way to highlight only a few obs (saves some typing)
 - [geomtextpath](https://github.com/AllanCameron/geomtextpath) Nice way
   to create labeled lines
+- [ggrepel](https://ggrepel.slowkow.com/) Extremely useful way to plot
+  jittered labels and text
 
 ## Options to arrange plots within a multiplot
 

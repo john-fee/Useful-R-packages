@@ -63,6 +63,7 @@ knitr::opts_chunk$set(
 - [ggdist](https://mjskay.github.io/ggdist/) A go-to library for communicating distributions,and uncertainty about distributions!
 - [gghighlight](https://yutannihilation.github.io/gghighlight/) Convenient way to highlight only a few obs (saves some typing)
 - [geomtextpath](https://github.com/AllanCameron/geomtextpath) Nice way to create labeled lines
+- [ggrepel](https://ggrepel.slowkow.com/) Extremely useful way to plot jittered labels and text
   
 ## Options to arrange plots within a multiplot
 
