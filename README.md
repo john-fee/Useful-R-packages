@@ -1,7 +1,7 @@
 Useful R packages
 ================
 John Fee
-2024-02-21
+2024-04-09
 
 # Documenting data
 
@@ -17,7 +17,6 @@ John Fee
   templates](https://bookdown.org/yihui/rmarkdown/document-templates.html)
   - This will be useful to create a default analysis document so we
     don’t have to write boilerplate code to setup data access every time
-
 - [bslib](https://rstudio.github.io/bslib/)
   - Nice options for theming html documents produced by Rmd
   - Should work with `flexdashboard`!
@@ -119,7 +118,8 @@ leverage these and start!
 - [testthat](https://testthat.r-lib.org/)
   - Unit testing in `R`
 - [memoise](https://memoise.r-lib.org/index.html)
-  - Caches function output.  Useful for interactive use (debugging), also for speeding up scripts with repetitive function calls!  
+  - Caches function output. Useful for interactive use (debugging), also
+    for speeding up scripts with repetitive function calls!
 
 # I/O
 
@@ -133,7 +133,6 @@ leverage these and start!
 - [zeallot](https://cran.r-project.org/web/packages/zeallot/index.html)
   - Provides packing and unpacking functionality similar to python’s
     `zip` and `unzip`
-
 
 # Modeling
 
@@ -157,7 +156,8 @@ going to list a few things that are relevant to me right now.
 - [survival](https://cran.r-project.org/web/packages/survival/index.html)
   - The OG survival package - lots of excellent vignettes.
 - [msm](https://cran.r-project.org/web/packages/msm/index.html)
-  - Multi-state modeling package in R.  Handles multi-state models with interval censoring (which `survival` doesn't).
+  - Multi-state modeling package in R. Handles multi-state models with
+    interval censoring (which `survival` doesn’t).
 - `flexsurv`
 - `ggsurvfit` provides ggplot visualizations for survival curves
 - [condsurv](https://www.emilyzabor.com/condsurv/index.html) is a quick
