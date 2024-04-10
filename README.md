@@ -25,7 +25,7 @@ John Fee
   - The best options (I’ve found) for creating nice customizable tables
     for html documents.
 - [kableExtra](https://haozhu233.github.io/kableExtra/)
-  - Nice lightweight package for html/pdf documents
+  - Nice lightweight table package for html/pdf documents
 - [gt](https://gt.rstudio.com/)
   - Table making package which I’ve heard good things about - might be
     worth trying out
@@ -38,12 +38,14 @@ John Fee
   - Provides `data.table` backend for `dplyr`
 - [tidytable](https://github.com/markfairbanks/tidytable)
   - Provides implementation of `dplyr` syntax natively in `data.table`
-- [arrow](https://arrow.apache.org/docs/r/) is a really nice way to
-  handle large datasets. Is a good option too if you can’t setup a
-  dedicated database
-- [dbplyr](https://dbplyr.tidyverse.org/) is for when you *do* have to
-  pull data out of databases, but don’t want to write dplyr code rather
-  than SQL.
+- [arrow](https://arrow.apache.org/docs/r/)
+  - is a really nice way to handle large datasets. Is a good option too
+    if you can’t setup a dedicated database.  
+- [dbplyr](https://dbplyr.tidyverse.org/)
+  - is for when you *do* have to pull data out of databases, but your
+    dplyr code to be translated to SQL.
+- [duckplyr](https://duckdb.org/2024/04/02/duckplyr)
+  - Native dplyr-style manipulation with DuckDB.
 
 # Plotting
 
@@ -65,8 +67,8 @@ John Fee
   - Nice option to add side plots
 - [ggmosaic](https://haleyjeppson.github.io/ggmosaic/index.html)
   - Package to produce mosaic plots, which I think are intuitive but
-    sadly seem to be confusing initially to others
-- [binsreg](https://nppackages.github.io/binsreg/)
+    sadly seem to be confusing initially to others \#\>-
+    [binsreg](https://nppackages.github.io/binsreg/)
   - A package for plotting binscatters, which is an interesting
     (nonparameteric) approach for visualizing relationships. Not sure of
     the advantages vs splines though.
@@ -82,8 +84,10 @@ John Fee
 ## Options to arrange plots within a multiplot
 
 - [patchwork](https://patchwork.data-imaginist.com/)
+  - I think this might be the standard now tbh
 - [gridExtra](https://cran.r-project.org/web/packages/gridExtra/index.html)
-- `cowplot` has options
+- `cowplot`
+  - has options
 - [egg](https://github.com/baptiste/egg)f
 
 ## Color palettes
@@ -102,24 +106,46 @@ leverage these and start!
 
 # Coding/Productivity
 
-- [modules](https://wahani.github.io/modules/)
-  - Provides an intermediate unit of code organization that is between a
-    function and a package. Very useful if you want to organize code but
-    don’t have access to package development (`Rtools`)
+## Functional programming
+
 - [magrittr](https://cran.r-project.org/web/packages/magrittr/vignettes/magrittr.html)
   - The source of the pipe operator which is incorporated into the
     tidyverse. Also has some operators like `%$%` (pipes in and exposes
     names - like using `with`) and some aliases for operations to make
     them easier to use with pipe-syntax
-- [`purrr`](https://purrr.tidyverse.org/) is a great tool for handling
-  situations that would require loops.
-- [furrr](https://furrr.futureverse.org/) is a good way to speed up
-  `purrr` when needed
+- [`purrr`](https://purrr.tidyverse.org/)
+  - is a great tool for handling situations that would require loops.
+- [furrr](https://furrr.futureverse.org/)
+  - is a good way to speed up `purrr` when needed
+
+## Package dev/testing
+
+- [fusen](https://thinkr-open.github.io/fusen/)
+  - Build a package from Rmarkdown documents! I think this has a lot of
+    potential.
 - [testthat](https://testthat.r-lib.org/)
   - Unit testing in `R`
+- [asserthat](https://github.com/hadley/assertthat)
+  - utilities for run-time assertions
+- [checkmate](https://mllg.github.io/checkmate/index.html)
+  - Convenient type checking assertions
+
+## Misc
+
+- [modules](https://wahani.github.io/modules/)
+  - Provides an intermediate unit of code organization that is between a
+    function and a package. Very useful if you want to organize code but
+    don’t have access to package development (`Rtools`)
 - [memoise](https://memoise.r-lib.org/index.html)
   - Caches function output. Useful for interactive use (debugging), also
     for speeding up scripts with repetitive function calls!
+- [chronicler](https://cran.r-project.org/web/packages/chronicler/index.html)
+  - function logging
+- [progressr](https://cran.r-project.org/web/packages/progressr/index.html)
+  - lightweight package for reporting progress updates
+- [zeallot](https://cran.r-project.org/web/packages/zeallot/index.html)
+  - Provides packing and unpacking functionality similar to python’s
+    `zip` and `unzip`
 
 # I/O
 
@@ -130,9 +156,6 @@ leverage these and start!
   - A nice I/O library that helps get data into and out of R quickly!
     Best for quick requests where a reproducible process isn’t
     necessary - just up-front dev speed.
-- [zeallot](https://cran.r-project.org/web/packages/zeallot/index.html)
-  - Provides packing and unpacking functionality similar to python’s
-    `zip` and `unzip`
 
 # Modeling
 
@@ -160,8 +183,8 @@ going to list a few things that are relevant to me right now.
     interval censoring (which `survival` doesn’t).
 - `flexsurv`
 - `ggsurvfit` provides ggplot visualizations for survival curves
-- [condsurv](https://www.emilyzabor.com/condsurv/index.html) is a quick
-  way to calculate and plot conditional survival
-- [contsurvplot](https://robindenz1.github.io/contsurvplot/) is a useful
-  package for visualizing the effect of continuous covariates on
-  survival
+- [condsurv](https://www.emilyzabor.com/condsurv/index.html)
+  - is a quick way to calculate and plot conditional survival
+- [contsurvplot](https://robindenz1.github.io/contsurvplot/)
+  - is a useful package for visualizing the effect of continuous
+    covariates on survival
