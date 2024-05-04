@@ -74,8 +74,8 @@ John Fee
   - Package to produce mosaic plots, which I think are intuitive but
     sadly seem to be confusing initially to others
 - [ggfittext](https://github.com/wilkox/ggfittext)
-  - Dynamically resize text/labels to fit into other geoms \#\> -
-    [binsreg](https://nppackages.github.io/binsreg/) A package for
+  - Dynamically resize text/labels to fit into other geoms
+  - [binsreg](https://nppackages.github.io/binsreg/) A package for
     plotting binscatters, which is an interesting (nonparameteric)
     approach for visualizing relationships. Not sure of the advantages
     vs splines though.
