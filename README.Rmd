@@ -42,7 +42,11 @@ knitr::opts_chunk$set(
 # Data processing
 
 - `tidyverse` is generally useful, particularly `dplyr`, `tidyr`,
-  `janitor`, `stringr`, and `readr`.
+  `janitor`, `stringr`, `readr`, `glue`.
+- [tidylog](https://github.com/elbersb/tidylog)
+  - Provides helpful warnings/feedback when manipulating data with dplyr and tidyr.
+- [dtrackr](https://cran.r-project.org/web/packages/dtrackr/index.html)
+  - Document data pipelines
 - [dtplyr](https://dtplyr.tidyverse.org/)
   - Provides `data.table` backend for `dplyr`
 - [tidytable](https://github.com/markfairbanks/tidytable)
@@ -77,26 +81,27 @@ knitr::opts_chunk$set(
 - [ggmosaic](https://haleyjeppson.github.io/ggmosaic/index.html)
   - Package to produce mosaic plots, which I think are intuitive but
     sadly seem to be confusing initially to others
-#>- [binsreg](https://nppackages.github.io/binsreg/)
-  - A package for plotting binscatters, which is an interesting
-    (nonparameteric) approach for visualizing relationships. Not sure of
-    the advantages vs splines though.
-- [ggdist](https://mjskay.github.io/ggdist/) A go-to library for
+- [ggfittext](https://github.com/wilkox/ggfittext)
+  - Dynamically resize text/labels to fit into other geoms
+#> - [binsreg](https://nppackages.github.io/binsreg/) A package for plotting binscatters, which is an interesting (nonparameteric) approach for visualizing relationships. Not sure of the advantages vs splines though.
+
+- [ggdist](https://mjskay.github.io/ggdist/)
+  - A go-to library for
   communicating distributions,and uncertainty about distributions!
 - [gghighlight](https://yutannihilation.github.io/gghighlight/)
-  Convenient way to highlight only a few obs (saves some typing)
-- [geomtextpath](https://github.com/AllanCameron/geomtextpath) Nice way
-  to create labeled lines
-- [ggrepel](https://ggrepel.slowkow.com/) Extremely useful way to plot
-  jittered labels and text
+  - Convenient way to highlight only a few obs (saves some typing)
+- [geomtextpath](https://github.com/AllanCameron/geomtextpath)
+  - Nice way to create labeled lines
+- [ggrepel](https://ggrepel.slowkow.com/) 
+  - Extremely useful way to plot jittered labels and text
 
 ## Options to arrange plots within a multiplot
 
 - [patchwork](https://patchwork.data-imaginist.com/) 
-  - I think this might be the standard now tbh
-- [gridExtra](https://cran.r-project.org/web/packages/gridExtra/index.html)
+  - Syntax seems easy to use - I should explore it more!
+#> - [gridExtra](https://cran.r-project.org/web/packages/gridExtra/index.html)
 - `cowplot` 
-  - has options
+  - More familiar with how to arrange plots with this
 - [egg](https://github.com/baptiste/egg)f
 
 ## Color palettes
@@ -136,17 +141,19 @@ leverage these and start!
   - Unit testing in `R`
 - [asserthat](https://github.com/hadley/assertthat) 
   - utilities for run-time assertions
+  - Use functions from here instead of `stopifnot`
 - [checkmate](https://mllg.github.io/checkmate/index.html) 
   - Convenient type checking assertions
+- [lintr](https://github.com/r-lib/lintr) and [styler](https://github.com/r-lib/styler) are helpful packages for linting and styling R code
+- [boomer](https://github.com/moodymudskipper/boomer) Debugging tools to view the intermediate results of a function call
+- [flow](https://github.com/moodymudskipper/flow) code diagrams
+- [import](https://cran.r-project.org/web/packages/import/index.html)
+  - Nice package for controlling function imports (including from other scripts)
 
 ## Misc
 
-- [modules](https://wahani.github.io/modules/)
-  - Provides an intermediate unit of code organization that is between a
-    function and a package. Very useful if you want to organize code but
-    don’t have access to package development (`Rtools`)
 - [memoise](https://memoise.r-lib.org/index.html)
-  - Caches function output.  Useful for interactive use (debugging), also for speeding up scripts with repetitive function calls! 
+  - Caches function output.  Useful for interactive use (debugging), also for speeding up scripts with repetitive function calls!
 - [chronicler](https://cran.r-project.org/web/packages/chronicler/index.html) 
   - function logging
 - [progressr](https://cran.r-project.org/web/packages/progressr/index.html) 
