@@ -83,8 +83,8 @@ knitr::opts_chunk$set(
     sadly seem to be confusing initially to others
 - [ggfittext](https://github.com/wilkox/ggfittext)
   - Dynamically resize text/labels to fit into other geoms
-- [binsreg](https://nppackages.github.io/binsreg/) A package for plotting binscatters, which is an interesting (nonparameteric) approach for visualizing relationships. Not sure of the advantages vs splines though.
-
+- [binsreg](https://nppackages.github.io/binsreg/)
+  - A package for plotting binscatters, which is an interesting (nonparameteric) approach for visualizing relationships. Not sure of the advantages vs splines though.
 - [ggdist](https://mjskay.github.io/ggdist/)
   - A go-to library for
   communicating distributions,and uncertainty about distributions!
