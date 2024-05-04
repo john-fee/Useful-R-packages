@@ -45,6 +45,8 @@ knitr::opts_chunk$set(
   `janitor`, `stringr`, `readr`, `glue`.
 - [tidylog](https://github.com/elbersb/tidylog)
   - Provides helpful warnings/feedback when manipulating data with dplyr and tidyr.
+- [powerjoin](https://github.com/moodymudskipper/powerjoin)
+  - Extension to `dplyr` to check joins and do fuzzy matching
 - [dtrackr](https://cran.r-project.org/web/packages/dtrackr/index.html)
   - Document data pipelines
 - [dtplyr](https://dtplyr.tidyverse.org/)
