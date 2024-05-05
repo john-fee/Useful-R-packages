@@ -41,6 +41,10 @@ John Fee
   - Extension to `dplyr` to check joins and do fuzzy matching
 - [dtrackr](https://cran.r-project.org/web/packages/dtrackr/index.html)
   - Document data pipelines
+- [dm](https://dm.cynkra.com/index.html)
+  - Provides a grammer for working with and documenting related
+    dataframes/tables. Successor to
+    [datamodelr](https://github.com/bergant/datamodelr).
 - [dtplyr](https://dtplyr.tidyverse.org/)
   - Provides `data.table` backend for `dplyr`
 - [tidytable](https://github.com/markfairbanks/tidytable)
