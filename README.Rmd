@@ -136,10 +136,8 @@ leverage these and start!
   - is a good way to speed up
   `purrr` when needed
 
-## Package dev/testing
+## Testing
 
-- [fusen](https://thinkr-open.github.io/fusen/) 
-  - Build a package from Rmarkdown documents!  I think this has a lot of potential.
 - [testthat](https://testthat.r-lib.org/)
   - Unit testing in `R`
 - [asserthat](https://github.com/hadley/assertthat) 
@@ -147,11 +145,24 @@ leverage these and start!
   - Use functions from here instead of `stopifnot`
 - [checkmate](https://mllg.github.io/checkmate/index.html) 
   - Convenient type checking assertions
+- [hedgehog](https://cran.r-project.org/web/packages/hedgehog/vignettes/hedgehog.html)
+  - Property testing package that integrates with testthat and quickly identifies useful counterexamples
+- [quickcheck](https://armcn.github.io/quickcheck/)
+  - Property testing package the builds on hedgehog, provides more generators and other useful functions
+
+## Dev tools
+
+- [fusen](https://thinkr-open.github.io/fusen/) 
+  - Build a package from Rmarkdown documents!  I think this has a lot of potential.
 - [lintr](https://github.com/r-lib/lintr) and [styler](https://github.com/r-lib/styler) are helpful packages for linting and styling R code
 - [boomer](https://github.com/moodymudskipper/boomer) Debugging tools to view the intermediate results of a function call
 - [flow](https://github.com/moodymudskipper/flow) code diagrams
 - [import](https://cran.r-project.org/web/packages/import/index.html)
   - Nice package for controlling function imports (including from other scripts)
+  - [docstring](https://cran.r-project.org/web/packages/docstring/index.html) 
+    - Allows function documentation (with help pages) outside of a package
+
+
 
 ## Misc
 
