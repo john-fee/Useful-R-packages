@@ -1,7 +1,7 @@
 Useful R packages
 ================
 John Fee
-2024-06-01
+2024-06-14
 
 # Documenting data
 
@@ -94,6 +94,9 @@ John Fee
   - Nice way to create labeled lines
 - [ggrepel](https://ggrepel.slowkow.com/)
   - Extremely useful way to plot jittered labels and text
+- [prettyunits](https://github.com/r-lib/prettyunits)
+  - Has some nice heuristic functions for formatting numbers for
+    presentation
 
 ## Options to arrange plots within a multiplot
 
@@ -140,6 +143,9 @@ leverage these and start!
   - Use functions from here instead of `stopifnot`
 - [checkmate](https://mllg.github.io/checkmate/index.html)
   - Convenient type checking assertions
+- [cli](https://github.com/r-lib/cli)
+  - In this context, could be useful for constructing nice error
+    messages/warnings
 - [hedgehog](https://cran.r-project.org/web/packages/hedgehog/vignettes/hedgehog.html)
   - Property testing package that integrates with testthat and quickly
     identifies useful counterexamples
