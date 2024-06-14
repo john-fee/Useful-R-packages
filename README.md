@@ -97,6 +97,9 @@ John Fee
 - [prettyunits](https://github.com/r-lib/prettyunits)
   - Has some nice heuristic functions for formatting numbers for
     presentation
+- [marquee](https://marquee.r-lib.org/index.html)
+  - Provides options render text using markdown syntax inside of
+    graphics. Can be used to color text for ggplots!
 
 ## Options to arrange plots within a multiplot
 
