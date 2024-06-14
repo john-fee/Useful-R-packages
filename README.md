@@ -104,7 +104,7 @@ John Fee
   - Syntax seems easy to use - I should explore it more!
 - `cowplot`
   - More familiar with how to arrange plots with this
-- [egg](https://github.com/baptiste/egg)f
+- [egg](https://github.com/baptiste/egg)
 
 ## Color palettes
 
@@ -129,7 +129,7 @@ leverage these and start!
     tidyverse. Also has some operators like `%$%` (pipes in and exposes
     names - like using `with`) and some aliases for operations to make
     them easier to use with pipe-syntax
-- [`purrr`](https://purrr.tidyverse.org/)
+- [purrr](https://purrr.tidyverse.org/)
   - is a great tool for handling situations that would require loops.
 - [furrr](https://furrr.futureverse.org/)
   - is a good way to speed up `purrr` when needed
@@ -167,9 +167,8 @@ leverage these and start!
 - [import](https://cran.r-project.org/web/packages/import/index.html)
   - Nice package for controlling function imports (including from other
     scripts)
-  - [docstring](https://cran.r-project.org/web/packages/docstring/index.html)
-    - Allows function documentation (with help pages) outside of a
-      package
+- [docstring](https://cran.r-project.org/web/packages/docstring/index.html)
+  - Allows function documentation (with help pages) outside of a package
 
 ## Misc
 
