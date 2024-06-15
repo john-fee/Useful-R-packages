@@ -59,6 +59,9 @@ John Fee
   - Native dplyr-style manipulation with DuckDB.
 - [naniar](https://github.com/njtierney/naniar)
   - Helps identify and visualize missingness in a dataset
+- [visdat](https://github.com/ropensci/visdat)
+  - Provides some quick utilities for identifying the structure of a
+    dataset
 
 # Plotting
 
@@ -102,9 +105,8 @@ John Fee
 - [marquee](https://marquee.r-lib.org/index.html)
   - Provides options render text using markdown syntax inside of
     graphics. Can be used to color text for ggplots!
-  - Currently I can’t get this to actually render - I seem to be
-    experiencing the problem documented in [this
-    issue](https://github.com/r-lib/marquee/issues/32#issue-2349665632)
+  - Required updating R + RStudio (on 6/1/2024) to get the text to
+    render.
 
 ## Options to arrange plots within a multiplot
 
