@@ -1,7 +1,7 @@
 Useful R packages
 ================
 John Fee
-2024-06-14
+2024-06-15
 
 # Documenting data
 
@@ -57,6 +57,8 @@ John Fee
     dplyr code to be translated to SQL.
 - [duckplyr](https://duckdb.org/2024/04/02/duckplyr)
   - Native dplyr-style manipulation with DuckDB.
+- [naniar](https://github.com/njtierney/naniar)
+  - Helps identify and visualize missingness in a dataset
 
 # Plotting
 
@@ -100,6 +102,9 @@ John Fee
 - [marquee](https://marquee.r-lib.org/index.html)
   - Provides options render text using markdown syntax inside of
     graphics. Can be used to color text for ggplots!
+  - Currently I can’t get this to actually render - I seem to be
+    experiencing the problem documented in [this
+    issue](https://github.com/r-lib/marquee/issues/32#issue-2349665632)
 
 ## Options to arrange plots within a multiplot
 
