@@ -1,7 +1,7 @@
 Useful R packages
 ================
 John Fee
-2024-06-15
+2024-10-03
 
 # Documenting data
 
@@ -192,6 +192,8 @@ leverage these and start!
 - [zeallot](https://cran.r-project.org/web/packages/zeallot/index.html)
   - Provides packing and unpacking functionality similar to python’s
     `zip` and `unzip`
+- [constructive](https://github.com/cynkra/constructive)
+  - Really handy for reproducing R objects as code!
 
 # I/O
 
