@@ -1,7 +1,7 @@
 Useful R packages
 ================
 John Fee
-2024-10-03
+2025-06-05
 
 # Documenting data
 
@@ -236,3 +236,9 @@ going to list a few things that are relevant to me right now.
 - [contsurvplot](https://robindenz1.github.io/contsurvplot/)
   - is a useful package for visualizing the effect of continuous
     covariates on survival
+
+## Mixed/Hierarchical models
+
+- [lcmm](https://cecileproust-lima.github.io/lcmm/index.html)
+  - implements various extensions to mixed models, including latent
+    class (mixture) models
